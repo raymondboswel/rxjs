@@ -45,7 +45,7 @@ import { OperatorSubscriber } from './OperatorSubscriber';
  * @return {Observable<Observable<T>>} An Observable of windows, which are
  * Observables emitting values of the source Observable.
  */
-export function window<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>> {
+export function windowOperator<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>> {
   return operate((source, subscriber) => {
     let windowSubject = new Subject<T>();
 

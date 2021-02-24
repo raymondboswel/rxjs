@@ -329,7 +329,7 @@ export declare function timestamp<T>(timestampProvider?: TimestampProvider): Ope
 
 export declare function toArray<T>(): OperatorFunction<T, T[]>;
 
-export declare function window<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>>;
+export declare function windowOperator<T>(windowBoundaries: Observable<any>): OperatorFunction<T, Observable<T>>;
 
 export declare function windowCount<T>(windowSize: number, startWindowEvery?: number): OperatorFunction<T, Observable<T>>;
 

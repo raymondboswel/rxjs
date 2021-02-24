@@ -93,7 +93,7 @@ describe('operators/index', () => {
     expect(index.timeoutWith).to.exist;
     expect(index.timestamp).to.exist;
     expect(index.toArray).to.exist;
-    expect(index.window).to.exist;
+    expect(index.windowOperator).to.exist;
     expect(index.windowCount).to.exist;
     expect(index.windowTime).to.exist;
     expect(index.windowToggle).to.exist;

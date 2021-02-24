@@ -1,4 +1,3 @@
-
 /* Operator exports */
 export { audit } from '../internal/operators/audit';
 export { auditTime } from '../internal/operators/auditTime';
@@ -97,7 +96,7 @@ export { timeout } from '../internal/operators/timeout';
 export { timeoutWith } from '../internal/operators/timeoutWith';
 export { timestamp } from '../internal/operators/timestamp';
 export { toArray } from '../internal/operators/toArray';
-export { window } from '../internal/operators/window';
+export { windowOperator } from '../internal/operators/window';
 export { windowCount } from '../internal/operators/windowCount';
 export { windowTime } from '../internal/operators/windowTime';
 export { windowToggle } from '../internal/operators/windowToggle';

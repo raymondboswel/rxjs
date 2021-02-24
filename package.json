@@ -1,5 +1,5 @@
 {
-  "name": "rxjs",
+  "name": "rxjs-window-operator-fix",
   "version": "7.0.0-beta.10",
   "description": "Reactive Extensions for modern JavaScript",
   "main": "./dist/cjs/index.js",
@@ -28,7 +28,7 @@
     "lint_src": "tslint -c tslint.json -p src/tsconfig.base.json \"src/**/*.ts\"",
     "lint": "npm-run-all --parallel lint_*",
     "dtslint": "tsc -b ./src/tsconfig.types.json && tslint -c spec-dtslint/tslint.json -p spec-dtslint/tsconfig.json \"spec-dtslint/**/*.ts\"",
-    "prepublishOnly": "npm run build:package && npm run lint && npm run test && npm run test:circular && npm run dtslint && npm run test:side-effects && npm run api_guardian",
+    "prepublishOnly": "npm run build:package && npm run lint && npm run test && npm run test:circular && npm run dtslint && npm run test:side-effects",
     "publish_docs": "./publish_docs.sh",
     "test": "npm run compile && mocha --config spec/support/.mocharc.js \"dist/spec/**/*-spec.js\"",
     "test:browser": "echo \"Browser test is not working currently\" && exit -1 && npm-run-all build:spec:browser && opn spec/support/mocha-browser-runner.html",
@@ -46,20 +46,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/reactivex/rxjs.git"
+    "url": "https://github.com/raymondboswel/rxjs.git"
   },
-  "keywords": [
-    "Rx",
-    "RxJS",
-    "ReactiveX",
-    "ReactiveExtensions",
-    "Streams",
-    "Observables",
-    "Observable",
-    "Stream",
-    "ES6",
-    "ES2015"
-  ],
   "author": "Ben Lesh <ben@benlesh.com>",
   "contributors": [
     {
